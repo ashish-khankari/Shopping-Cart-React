@@ -11,9 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title{
+  background-color: rgb(74, 119, 158);
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+  justify-content: center;
+  width: 50%;
+  height: 60px;
+}
+
+
 .cart-item {
   display: inline-flex;
   margin: 20px 10px;
+  margin-top: 100px;
+}
+.cart-item .left-block {
+  padding: 0 5px;
 }
 .cart-item .right-block {
   padding: 0 20px;
@@ -22,10 +39,15 @@ code {
   margin-top: 20px;
 }
 .action-icons {
-  height: 25px; 
-  width: 25px;
+  height: 30px; 
+  width: 30px;
   margin-right: 10px;
 }
 .action-icons:hover {
   cursor: pointer;
+}
+
+.Cart{
+  display: flex;
+  flex-direction: column;
 }
