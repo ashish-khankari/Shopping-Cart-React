@@ -2,34 +2,18 @@ import React from "react";
 import './index.css';
 // import Cart from "./Cart";
 
-class CartItem extends React.Component {
+const CartItem = (props) => {
 
-    increaseQuantity = () => {
-        this.setState({
-            qty: this.state.qty + 1
-        })
-    }
-    decreaseQuantity = () => {
-        const { qty } = this.state;
-        if (qty === 0) {
-            return;
-        }
-        //to decreaes qty use use state
-        this.setState({
-            qty: this.state.qty - 1
-        })
-    }
 
-    render() {
         // console.log('this.prop', this.props)
-        const { price, title, qty } = this.props.product;
-        const { product, onIncreaseQuantity, onDecreaseQuantity, onhandleDeleteProduct } = this.props;
+        const { price, title, qty, img } = props.product;
+        const { product, onIncreaseQuantity, onDecreaseQuantity, onhandleDeleteProduct } = props;
         return (
             <div className="cart-item">
-                {this.props.jsx}
+                {props.jsx}
 
                 <div className="left-block">
-                    <img style={styles.image} />
+                    <img style={styles.image} src= {product.img}/>
                 </div>
                 <div className="right-block">
                     <div style={styles.items}>{title}</div>
@@ -63,7 +47,7 @@ class CartItem extends React.Component {
             </div>
         )
     }
-}
+
 // A state is way to store local data for a particular component
 
 const styles = {
