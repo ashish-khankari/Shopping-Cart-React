@@ -1,36 +1,14 @@
 body {
-  margin: 100px;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.title{
-  background-color: rgb(74, 119, 158);
-  color: white;
-  display: flex;
-  align-items: center;
-  margin-left: 25%;
-  justify-content: center;
-  width: 50%;
-  height: 60px;
-}
-
-
 .cart-item {
   display: inline-flex;
   margin: 20px 10px;
-  margin-top: 100px;
-}
-.cart-item .left-block {
-  padding: 0 5px;
 }
 .cart-item .right-block {
   padding: 0 20px;
@@ -39,15 +17,14 @@ code {
   margin-top: 20px;
 }
 .action-icons {
-  height: 30px; 
-  width: 30px;
+  height: 25px;
+  width: 25px;
   margin-right: 10px;
 }
 .action-icons:hover {
   cursor: pointer;
 }
-
-.Cart{
+.cart {
   display: flex;
   flex-direction: column;
 }
